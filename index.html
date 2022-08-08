@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>BookStore</title>
+  <script src="./modules/index.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <h3><span>Awesome</span> Books</h3>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="#listBook" class="nav-item" id="showList" onclick="changeNavColor(0)">List <small id="showListNum"></small></a>
+          <a href="#form" class="nav-item" id="showForm" onclick="changeNavColor(1)">Add New</a>
+          <a href="#contact" class="nav-item" id="showContact" onclick="changeNavColor(2)">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="date">
+  </div>
+
+  <section id="listBook" class="wrapper">
+    <h1> All Awesome Books</h1>
+    <div class="library"></div>
+    <section class="formElement">
+      <hr>
+      <h2 id="BTitle">Add New Book</h2>
+      <div id="display-msg"></div>
+      <form id="form">
+        <input type="text" name="title" id="title" placeholder="Title" required>
+
+        <input type="text" name="author" id="author" placeholder="Author" required>
+
+        <button type="button" id="add">Add</button>
+      </form>
+    </section>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p>Got any questions? or would love to drop a message/feedback? <br>You can reach out to us:</p>
+    <ul class="contact-icons">
+      <li><a href="awesomebooks@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>awesomebooks@gmail.com</a>
+      </li>
+      <li><a href="+2347012897856"><i class="fa fa-phone-square" aria-hidden="true"></i>+2347012897856</a></li>
+      <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>52 Bricks Road, Texas, USA</a></li>
+    </ul>
+
+  </section>
+
+  <footer>
+    <h5><span>Awesome</span> Books</h5>
+    <p>Copyright &copy; 2022 All Rights Reserved </p>
+  </footer>
+</body>
+
+</html>

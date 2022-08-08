@@ -1,0 +1,11 @@
+{
+  "name": "bookstore",
+  "version": "1.1.0",
+  "description": "a book that adds, stores and removes books from a book list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Promise Okechukwu",
+  "license": "MIT"
+}

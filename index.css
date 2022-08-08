@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700;800&family=Poppins&family=Roboto:wght@700&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+
+.library>div:nth-child(odd) {
+  background-color: brown;
+  color: #fff;
+}
+
+.btn {
+  margin: 10px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #900000;
+  border: none;
+  color: #fafafa;
+  border-radius: 5px;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 3px #282828;
+}
+
+.formElement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 60px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.clicked-link {
+  color: rgb(165, 42, 42);
+  font-weight: 800;
+  outline: 0;
+  padding-bottom: 9px;
+  border: 1px solid;
+  border-color: rgba(165, 42, 42, 0.511);
+  border-width: 0 0 1px;
+  transition: all 0.5s ease-in-out;
+}
+
+#add {
+  border: none;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 2px #afafaf;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#add:hover {
+  background-color: brown;
+  border: none;
+  border-radius: 7px;
+  color: #f4f4f4;
+  transition: all 0.6s ease-in-out;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 10px 20px;
+  outline: 0;
+  border-width: 0 0 0;
+  border-color: #282828;
+}
+
+input:focus {
+  border-width: 0 0 1px;
+  border-color: brown;
+}
+
+/* styles for the header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fafafa;
+  box-shadow: 0 0 10px rgb(118, 118, 118);
+  padding: 0 20px;
+}
+
+span {
+  color: brown;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: #282828;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+a:hover {
+  color: brown;
+}
+
+/* styles for the contact */
+#contact {
+  color: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact-icons a {
+  color: #282828;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icons a:hover {
+  color: brown;
+}
+
+/* styles for the footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 0 10px #afafaf;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* styles for the date and time section */
+.date {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.message {
+  display: block;
+  background-color: rgb(51, 192, 0);
+  padding: 20px 30px;
+  border-radius: 30px;
+  font-size: 13px;
+  color: white;
+}
+
+.error {
+  padding: 20px 30px;
+  border-radius: 30px;
+  font-size: 13px;
+  color: white;
+  background-color: red;
+}
+
+/* styling for number of books */
+#showListNum {
+  background-color: brown;
+  padding: 5px 8px;
+  border-radius: 100%;
+  color: #fff;
+}
