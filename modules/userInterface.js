@@ -1,5 +1,5 @@
 /* eslint-disable import/no-cycle */
-import StoredBooks from './index.js';
+import StoredBooks from '../index.js';
 
 // the User Interface class that displays the books at the top
 let books;

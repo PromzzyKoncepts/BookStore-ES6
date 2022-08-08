@@ -1,9 +1,9 @@
 // Using Class Book represents a book and the various values used
 /* eslint-disable import/no-cycle */
 
-import UserInterFace from './userInterface.js';
-import Book from './Book.js';
-import dates from './luxon.js';
+import UserInterFace from './modules/userInterface.js';
+import Book from './modules/Book.js';
+import dates from './modules/luxon.js';
 
 const { DateTime } = dates;
 
