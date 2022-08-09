@@ -1,6 +1,9 @@
-import UserInterFace  from './userInterface.js';
-import Book from './Book.js';
-import dates from "./luxon.js";
+// Using Class Book represents a book and the various values used
+/* eslint-disable import/no-cycle */
+
+import UserInterFace from './modules/userInterface.js';
+import Book from './modules/Book.js';
+import dates from './modules/luxon.js';
 
 const { DateTime } = dates;
 
@@ -38,9 +41,8 @@ window.addEventListener('load', () => {
   document.getElementById('contact').style.display = 'none';
   document.getElementsByClassName('formElement')[0].style.display = 'flex';
   document.getElementsByTagName('h1')[0].style.display = 'none';
-    listNum.className = 'list';
+  listNum.className = 'list';
   listNum.innerText = `${StoredBooks.bookNumber()}`;
-  
 });
 
 // addeventlistener functions for the add button
@@ -61,7 +63,7 @@ document.querySelector('#add').addEventListener('click', (e) => {
     UserInterFace.showBookList(book);
     UserInterFace.clearInput();
     message.innerText = 'Great! Your book was successfully added!!';
-     listNum.className = 'list';
+    listNum.className = 'list';
     listNum.innerText = `${StoredBooks.bookNumber()}`;
   }
   setTimeout(() => {
@@ -70,12 +72,12 @@ document.querySelector('#add').addEventListener('click', (e) => {
   }, 3000);
 });
 
-// navbar section 
+// navbar section
 const showContact = document.getElementById('showContact');
 const showForm = document.getElementById('showForm');
 const showBooks = document.getElementById('showList');
 
- showContact.addEventListener('click', () => {
+showContact.addEventListener('click', () => {
   document.getElementsByClassName('library')[0].style.display = 'none';
   document.getElementById('contact').style.display = 'flex';
   document.getElementsByClassName('formElement')[0].style.display = 'none';
@@ -96,17 +98,11 @@ showBooks.addEventListener('click', () => {
   document.getElementsByClassName('formElement')[0].style.display = 'none';
 });
 
-
 const changeNavColor = (index) => {
   const navItems = document.querySelectorAll('.nav-item');
   Array.from(navItems).forEach((item, ind) => (ind === index ? item.classList.toggle('clicked-link') : item.classList.remove('clicked-link')));
-}
+};
 window.changeNavColor = changeNavColor;
 
 const date = document.getElementsByClassName('date');
 date[0].innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
-
-
-
-
-
